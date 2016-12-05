@@ -1,0 +1,274 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+*{
+    padding: 0;margin: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;height: 100%;
+}
+header{
+    width: 100%;height: 1.2rem;
+    background: #fe0000;
+    position: fixed;top:0;left:0;
+    z-index: 999;
+}
+.header{
+    width: 100%;height: 100%;
+    position: absolute;top:0;left: 0;
+}
+.header .title{
+    width: 5.8rem;height: 0.6rem;
+    position: absolute;top:0.5rem;left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    text-align: center;
+    line-height:0.55rem;
+}
+.header .title li{
+    width: 0.95rem;height: 0.55rem;
+    font-size: 0.3rem;font-weight: 500;
+    align-self: center;
+    color:#fff;
+}
+.header .title .title-active{
+    width: 0.95rem;height: 0.55rem;
+    background: #f3c4bc;
+    border-radius: 0.05rem;
+    font-weight: 600;
+}
+.header .jia{
+    width: 0.7rem;height: 0.6rem;
+    font-size: 0.5rem;
+    text-align: center;line-height: 0.7rem;
+    position: absolute;right: 0;top:0.5rem;
+    color:#fff;
+}
+.swiper-container {
+    width: 100%;
+    margin-top: 2.1rem;
+    margin-bottom:0.9rem;
+}
+.swiper-wrapper a img{
+    width: 100%;height: 3.75rem;
+}
+/*轮播图*/
+.banner div{
+    width:0.1rem;
+    height:0.6rem;
+    color:#fff;
+    background:#000;
+    opacity:0.8;
+    cursor:pointer;
+    line-height: 0.6rem;
+    font-size:0.2rem;
+    position:absolute;
+}
+.left{
+    top:0;
+    bottom:0;
+    left:0;
+    margin:auto 0;
+}
+.right{
+    top:0;
+    bottom:0;
+    right:0;
+    margin:auto 0;
+}
+.banner{
+    width:100%;
+    height:3.75rem;
+    margin:0 auto;
+    overflow:hidden;
+    position:relative;
+}
+.banner a{
+    position:absolute;
+    left:0;
+    right:0;
+    opacity:1;
+}
+.btn{
+    width:1.25rem;
+    height:0.2rem;
+    position:absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    bottom:0.2rem;
+}
+.btn li{
+    width:0.2rem;
+    height:0.2rem;
+    margin-right:0.05rem;
+    float:left;
+    background:#ccc;
+    border-radius:50%;
+    cursor:pointer;
+}
+.btn .btn_xiaoguo{
+    background:red;
+}
+
+.find-box{
+    width: 100%;height: 0.9rem;
+    background: #ebebeb;
+    position: fixed;top:1.2rem;left: 0;
+    z-index: 999;
+}
+.find{
+    width: 7rem;height: 0.6rem;
+    position: absolute;top:0.15rem;left: 0.25rem;
+    background: #fff;
+    border-radius:0.05rem;
+}
+.inlogo{
+    display: inline-block;
+    width: 0.55rem;height: 0.55rem;
+    position: absolute;top:0rem;  left:0;
+    background: url("../img/inlogo.png") no-repeat;
+    background-size:0.6rem 0.6rem;
+}
+.find input {
+    position: absolute;top:0.05rem;
+    left: 0.5rem;
+    width: 6.3rem;height: 0.5rem;
+    border:none;
+    outline: none;
+}
+
+/*con*/
+.con-box{
+    width: 100%;
+    margin-top: 0.1rem;
+}
+.con{
+    width: 95%;
+    margin: auto;
+}
+.con li{
+    width: 100%;height: 1.6rem;
+    border-bottom:2px solid #f7f7f7;
+    margin-top: 0.1rem;
+}
+.con .con-li{
+    height:2.5rem;
+}
+.zhuti{
+    width: 4.6rem;height: 1.35rem;
+    float: right;
+    position:relative;
+}
+.con-pic{
+    width: 2.25rem;height: 1.35rem;
+    float: left;
+}
+.zhuti1{
+    width:100%;
+    height:1rem;
+    margin-bottom:0.1rem;
+}
+.con-pic1{
+    width:100%;
+    height:1.35rem;
+}
+.con-pic img{
+    width: 2.25rem;
+    height:1.35rem;
+}
+.con-pic1 img{
+    width:28%;
+    height:1.2rem;
+}
+.zhuti h3{
+    font-size: 0.3rem;color:#383838;
+    float: left;
+}
+.tile{
+    width:0.5rem;
+    height:0.2rem;
+    text-align: center;
+    line-height: 0.2rem;
+    border:0.01rem solid #ccc;
+    font-size: 0.2rem;color:#4DA2DD;
+    position: absolute;
+    bottom:0.02rem;
+}
+.zhuti .span1{
+    font-size: 0.2rem;color:#9d9d9d;
+    margin-top: 0.35rem;
+    position:absolute;
+    bottom:0.02rem;
+    left:0.6rem;
+}
+.see{
+    height: 0.25rem;
+    font-size: 0.2rem;color:#9d9d9d;
+    padding-left:0.35rem;
+    background: url("../img/eye.png") no-repeat;
+    background-size:0.3rem 0.3rem;
+    position: absolute;
+    bottom:0.02rem;
+    right:1rem;
+
+}
+.remove{
+    width: 0.3rem;height: 0.24rem;
+    float: right;margin-top: 0.35rem;
+    position:absolute;
+    bottom:0.02rem;
+    right:0.1rem;
+    background: url("../img/remove.png") no-repeat;
+    background-size:0.3rem 0.24rem;
+}
+
+/*底部*/
+.footer{
+    width: 100%;height: 0.9rem;
+    position: fixed;bottom: 0;left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    border-top:2px solid #f7f7f7;
+}
+.footer-icon{
+    width: 1.6rem;height: 100%;
+}
+.footer-icon .icon-zi{
+    font-size: 0.18rem;
+    color:#000;
+    text-align: center;
+    font-weight: 500;
+}
+.footer-icon .footer1{
+    width: 0.5rem;height: 0.5rem;
+    margin: auto;margin-top: 0.05rem;
+    background: url("../img/home2.png") no-repeat;
+    background-size:0.5rem 0.5rem;
+}
+.footer-icon .footer2{
+    width: 0.5rem;height: 0.5rem;
+    margin: auto;margin-top: 0.05rem;
+    background: url("../img/video1.png") no-repeat;
+    background-size:0.5rem 0.5rem;
+}
+.footer-icon .footer3{
+    width: 0.5rem;height: 0.5rem;
+    margin: auto;margin-top: 0.05rem;
+    background: url("../img/find1.png") no-repeat;
+    background-size:0.5rem 0.5rem;
+}
+.footer-icon .footer4{
+    width: 0.6rem;height: 0.6rem;
+    margin: auto;margin-top: 0rem;
+    background: url("../img/mi1.png") no-repeat;
+    background-size:0.6rem 0.6rem;
+}
