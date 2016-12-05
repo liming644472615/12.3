@@ -14,7 +14,7 @@ $(function(){
     var myswiper=new Swiper(".swiper-container",{
         pagination:".swiper-pagination",
         paginationType:"progress",
-        //autoplay: 2000,
+        autoHeight: true,
         onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
             swiperAnimateCache(swiper); //隐藏动画元素
             swiperAnimate(swiper); //初始化完成开始动画
@@ -23,6 +23,16 @@ $(function(){
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     })
+    var mySwiper2 = new Swiper('#swiper-container2',{//子swiper
+        nested:true,
+        autoplay: 2000,
+    })
+    //var myswiper1=new Swiper("#swiper-container2",{
+    //    pagination:".swiper-pagination",
+    //    paginationType:"progress",
+    //    autoplay: 2000,
+    //    nested:true,
+    //})
 
     var banners = $(".banner");
     var imgs = $(".banner a");
